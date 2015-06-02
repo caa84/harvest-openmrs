@@ -1,0 +1,21 @@
+............F.......F....
+======================================================================
+FAIL: test_months (openmrs.tests.tests_formatter.FormatTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/opt/app/openmrs/tests/tests_formatter.py", line 66, in test_months
+    ]), fvalues)
+AssertionError: OrderedDict([('Birthdate', '5.0 months old')]) != OrderedDict([('Birthdate', '2.0 months old')])
+
+======================================================================
+FAIL: test_year_est (openmrs.tests.tests_formatter.FormatTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/opt/app/openmrs/tests/tests_formatter.py", line 58, in test_year_est
+    ]), fvalues)
+AssertionError: OrderedDict([('Birthdate', "2.0 year old <em class='muted'>(estimated)</em>")]) != OrderedDict([('Birthdate', "1.0 year old <em class='muted'>(estimated)</em>")])
+
+----------------------------------------------------------------------
+Ran 25 tests in 44.416s
+
+FAILED (failures=2)
